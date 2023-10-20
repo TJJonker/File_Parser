@@ -4,6 +4,12 @@
     <Filter Include="Debug">
       <UniqueIdentifier>{0C95060D-78A9-2EBE-412B-D21DADFE2AEF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="FileHandler">
+      <UniqueIdentifier>{E33836F6-4FEE-AEEB-D8E2-A8C24497A5EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Serializer">
+      <UniqueIdentifier>{5F9D492C-4B55-8B79-B45C-64D5A033266A}</UniqueIdentifier>
+    </Filter>
     <Filter Include="StateMachine">
       <UniqueIdentifier>{BB54AC3C-A7B7-3BE1-503D-74973C7F0764}</UniqueIdentifier>
     </Filter>
@@ -14,6 +20,18 @@
   <ItemGroup>
     <ClInclude Include="src\Debug\Log.h">
       <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FileHandler\FileHandler.h">
+      <Filter>FileHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Serializer\ISerializer.h">
+      <Filter>Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Serializer\JsonSerializer.h">
+      <Filter>Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Serializer\PreferencesManager.h">
+      <Filter>Serializer</Filter>
     </ClInclude>
     <ClInclude Include="src\StateMachine\State.h">
       <Filter>StateMachine</Filter>
@@ -36,7 +54,16 @@
     <ClCompile Include="src\Debug\Log.cpp">
       <Filter>Debug</Filter>
     </ClCompile>
+    <ClCompile Include="src\FileHandler\FileHandler.cpp">
+      <Filter>FileHandler</Filter>
+    </ClCompile>
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Serializer\JsonSerializer.cpp">
+      <Filter>Serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Serializer\PreferencesManager.cpp">
+      <Filter>Serializer</Filter>
+    </ClCompile>
     <ClCompile Include="src\StateMachine\StateManager.cpp">
       <Filter>StateMachine</Filter>
     </ClCompile>
@@ -50,5 +77,10 @@
       <Filter>StateMachine\States</Filter>
     </ClCompile>
     <ClCompile Include="src\pch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JSON\Config.json" />
+    <None Include="Resources\JSON\Preferences.json" />
+    <None Include="Resources\JSON\Languages\English.json" />
   </ItemGroup>
 </Project>

@@ -3,7 +3,7 @@
 
 #define LOGANDRETURN(...) { LOG_ERROR(__VA_ARGS__); return false; }
 
-bool FileHandler::ReadFile(std::string& filePath, std::string& dataOut)
+bool FileHandler::ReadFile(const std::string& filePath, std::string& dataOut)
 {
     FILE* file = nullptr;
     errno_t error = fopen_s(&file, filePath.c_str(), "rb");
@@ -27,11 +27,12 @@ bool FileHandler::ReadFile(std::string& filePath, std::string& dataOut)
     buffer[fileSize] = '\0';
     dataOut = buffer;
     free(buffer);
+    fclose(file);
 
     return true;
 }
 
-bool FileHandler::WriteFile(std::string& filePath, const char* data)
+bool FileHandler::WriteFile(const std::string& filePath, const char* data)
 {
     FILE* file = nullptr;
     errno_t error = fopen_s(&file, filePath.c_str(), "wb");

@@ -2,25 +2,11 @@
 #include "StateMachine/States/OverviewState.h"
 #include "StateMachine/States/PreferencesState.h"
 #include "StateMachine/States/ChangePreferenceState.h"
-#include <rapidjson.h>
-#include <document.h>
-#include <filewritestream.h>
-#include <filereadstream.h>
 #include "FileHandler/FileHandler.h"
+#include <Serializer/JsonSerializer.h>
+#include <Serializer/PreferencesManager.h>
 
-
-struct ConfigData {
-	std::string PreferencesFile;
-	std::map<std::string, std::string> LanguagesFiles;
-};
-
-struct Languages {
-	std::string LanguageName;
-	std::map<std::string, std::string> KeyValues;
-};
-
-
-bool ReadConfigFromJSON(const std::string& filePath, ConfigData& configDataOut);
+const std::string ConfigFilePath = "Resources/JSON/Config.json";
 
 int main() {
 	Debug::Log::Init();
@@ -34,31 +20,10 @@ int main() {
 	stateManager.Initialize(states);
 
 
-	//ConfigData data;
-	//ReadConfigFromJSON("Resources/JSON/Config.json", data);
+	ConfigData configData;
+	std::vector<Language> languages;
+	Preferences preferences;
 
-}
-
-bool ReadConfigFromJSON(const std::string& filePath, ConfigData& configDataOut) {
-
-	// File openinig
-	FILE* fp = 0;
-	fopen_s(&fp, filePath.c_str(), "rb");
-
-	// File reading
-	char readBuffer[65536];
-	rapidjson::FileReadStream fss(fp, readBuffer, sizeof(readBuffer));
-	
-	// Place everything into a document
-	rapidjson::Document document;
-	document.ParseStream(fss);
-	
-	// Search for preference
-	rapidjson::Value& preferenceFile = document["PreferencesFile"];
-	std::string filename = preferenceFile.GetString();
-
-	fclose(fp);
-	
-	return true;
-
+	PreferencesManager preferencesManager(std::make_shared<JsonSerializer>());
+	preferencesManager.DeserializeData(ConfigFilePath, configData, languages, preferences);
 }

@@ -1,0 +1,12 @@
+{
+    "Language" :  "English",
+    "LanguageKeyValues": [
+        { "Intro1": "Welcome to your space adventure. Let's customize your travel!" },
+        { "Intro2": "Enter X anytime to make a space walk." },
+        { "Pref1": "These are your current customization settings:" },
+        { "Q1": "Language" },
+        { "Q2": "Color spacesuit" },
+        { "Q3": "Amount of thrusters on the spaceship" },
+        { "Q4": "Name for the spaceship" }
+    ]
+}

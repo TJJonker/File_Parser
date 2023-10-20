@@ -1,0 +1,9 @@
+{
+    "Language":  "Dutch",
+    "LanguageKeyValues": [
+        { "Q1": "Taal" },
+        { "Q2": "Kleur ruimtepak" },
+        { "Q3": "Aantal stuwkrachten op het ruimteschip" },
+        { "Q4": "Naam van het ruimteschip" }
+    ]
+}

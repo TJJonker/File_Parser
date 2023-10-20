@@ -1,9 +1,6 @@
 {
-    "PreferencesFile": "preferences.json",
+    "PreferencesFile": "Resources/JSON/Preferences.json",
     "LanguagesFiles": [
-        "english.json",
-        "spanish.json",
-        "french.json",
-        "dutch.json"
+        "Resources/JSON/Languages/English.json"
     ]
 }

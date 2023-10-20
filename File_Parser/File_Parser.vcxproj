@@ -52,8 +52,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\FileHandler\FileHandler.h" />
     <ClInclude Include="src\Debug\Log.h" />
+    <ClInclude Include="src\FileHandler\FileHandler.h" />
+    <ClInclude Include="src\Serializer\ISerializer.h" />
+    <ClInclude Include="src\Serializer\JsonSerializer.h" />
+    <ClInclude Include="src\Serializer\PreferencesManager.h" />
     <ClInclude Include="src\StateMachine\State.h" />
     <ClInclude Include="src\StateMachine\StateManager.h" />
     <ClInclude Include="src\StateMachine\States\ChangePreferenceState.h" />
@@ -62,9 +65,11 @@
     <ClInclude Include="src\pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\FileHandler\FileHandler.cpp" />
     <ClCompile Include="src\Debug\Log.cpp" />
+    <ClCompile Include="src\FileHandler\FileHandler.cpp" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Serializer\JsonSerializer.cpp" />
+    <ClCompile Include="src\Serializer\PreferencesManager.cpp" />
     <ClCompile Include="src\StateMachine\StateManager.cpp" />
     <ClCompile Include="src\StateMachine\States\ChangePreferenceState.cpp" />
     <ClCompile Include="src\StateMachine\States\OverviewState.cpp" />
@@ -75,6 +80,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\JSON\Config.json" />
+    <None Include="Resources\JSON\Languages\English.json" />
+    <None Include="Resources\JSON\Preferences.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

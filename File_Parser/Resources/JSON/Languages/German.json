@@ -1,0 +1,8 @@
+{
+    "LanguageKeyValues": [
+        { "Q1": "Sprache" },
+        { "Q2": "Farbe des Raumanzugs" },
+        { "Q3": "Anzahl der Triebwerke des Raumschiffs" },
+        { "Q4": "Name des Raumschiffs" }
+    ]
+}
