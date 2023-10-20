@@ -1,0 +1,22 @@
+{
+    "Language": "Alien",
+    "LanguageKeyValues": [
+        { "Intro1": "Greetings from the cosmic void. Adjust the quantum flux of your interstellar journey!" },
+        { "Intro2": "Transmit 'X' at any quantum entanglement point for a subspace expedition." },
+        { "Pref1": "Behold the oscillating plasma configurations:" },
+        { "Cust1": "Dial into the numerical sequence" },
+        { "Cust2": "for molecular realignment" },
+        { "Q1Status": "The quantum resonance harmonization is set to:" },
+        { "Q2Status": "Chromatic phase-shifting is resonating in the spectrum of:" },
+        { "Q3Status": "Quantum thruster quantification reads:" },
+        { "Q4Status": "Nominal designation of your star vessel is:" },
+        { "Q1Update": "Cosmic lexicon now synchronized to:" },
+        { "Q2Update": "Enigmatic cosmic hues unveil:" },
+        { "Q3Update": "Starship's quantum manifold aligns with:" },
+        { "Q4Update": "Stellar entity designation transitions to:" },
+        { "Q1": "Cosmic Code" },
+        { "Q2": "Chromatic Shift" },
+        { "Q3": "Quantum Propulsion" },
+        { "Q4": "Stellar Moniker" }
+    ]
+}

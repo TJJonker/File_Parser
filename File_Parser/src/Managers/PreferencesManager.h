@@ -1,5 +1,5 @@
 #pragma once
-#include "ISerializer.h"
+#include "Serializer/ISerializer.h"
 
 struct ConfigData {
 	std::string PreferencesFile;

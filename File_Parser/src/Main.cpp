@@ -4,7 +4,7 @@
 #include "StateMachine/States/ChangePreferenceState.h"
 #include "FileHandler/FileHandler.h"
 #include <Serializer/JsonSerializer.h>
-#include <Serializer/PreferencesManager.h>
+#include <Managers/PreferencesManager.h>
 
 const std::string ConfigFilePath = "Resources/JSON/Config.json";
 
@@ -18,7 +18,6 @@ int main() {
 	states[StateManager::States::PREFERENCES] = std::make_shared<PreferencesState>(stateManager);
 	states[StateManager::States::CHANGEPREFERENCE] = std::make_shared<ChangePreferenceState>(stateManager);
 	stateManager.Initialize(states);
-
 
 	ConfigData configData;
 	std::vector<Language> languages;

@@ -1,9 +1,22 @@
 {
-    "Language":  "Dutch",
+    "Language": "Dutch",
     "LanguageKeyValues": [
+        { "Intro1": "Welkom bij jouw ruimteavontuur. Laten we jouw reis aanpassen!" },
+        { "Intro2": "Voer 'X' in op elk moment om een ruimtewandeling te maken." },
+        { "Pref1": "Dit zijn jouw huidige aanpassingsinstellingen:" },
+        { "Cust1": "Voer het nummer" },
+        { "Cust2": "in om een voorkeur te wijzigen" },
+        { "Q1Status": "Jouw huidige ingestelde taal is:" },
+        { "Q2Status": "De huidige kleur van jouw ruimtepak is:" },
+        { "Q3Status": "Het huidige aantal stuwkrachten op het ruimteschip is:" },
+        { "Q4Status": "De huidige naam van jouw ruimteschip is:" },
+        { "Q1Update": "De nieuwe taal is ingesteld op:" },
+        { "Q2Update": "Wow! Jouw nieuwe ruimtepak is gekleurd:" },
+        { "Q3Update": "Het aantal stuwkrachten op jouw ruimteschip is nu:" },
+        { "Q4Update": "Geweldige naam! De nieuwe naam van jouw schip is:" },
         { "Q1": "Taal" },
         { "Q2": "Kleur ruimtepak" },
         { "Q3": "Aantal stuwkrachten op het ruimteschip" },
-        { "Q4": "Naam van het ruimteschip" }
+        { "Q4": "Naam voor het ruimteschip" }
     ]
 }

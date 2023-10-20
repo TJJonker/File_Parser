@@ -1,8 +1,8 @@
 [
     {
         "question": "Q1",
-        "answer": "English",
-        "options": [ "Dutch", "English", "German", "Spanish" ]
+        "answer": "1",
+        "options": [ "1", "2", "3", "4", "5" ]
     },
     {
         "question": "Q2",

@@ -1,8 +1,22 @@
 {
+    "Language": "Spanish",
     "LanguageKeyValues": [
+        { "Intro1": "Bienvenido a tu aventura espacial. ¡Personalicemos tu viaje!" },
+        { "Intro2": "Ingresa 'X' en cualquier momento para dar un paseo espacial." },
+        { "Pref1": "Estas son tus configuraciones actuales:" },
+        { "Cust1": "Ingresa el número" },
+        { "Cust2": "para cambiar una preferencia" },
+        { "Q1Status": "Tu idioma actualmente configurado es:" },
+        { "Q2Status": "El color actual de tu traje espacial es:" },
+        { "Q3Status": "La cantidad actual de propulsores en la nave espacial es:" },
+        { "Q4Status": "El nombre actual de tu nave espacial es:" },
+        { "Q1Update": "El nuevo idioma se ha configurado en:" },
+        { "Q2Update": "¡Wow! Tu nuevo traje espacial está coloreado:" },
+        { "Q3Update": "La cantidad de propulsores en tu nave espacial es ahora:" },
+        { "Q4Update": "¡Gran nombre! El nuevo nombre de tu nave es:" },
         { "Q1": "Idioma" },
         { "Q2": "Color del traje espacial" },
         { "Q3": "Cantidad de propulsores en la nave espacial" },
-        { "Q4": "Nombre de la nave espacial" }
+        { "Q4": "Nombre para la nave espacial" }
     ]
 }

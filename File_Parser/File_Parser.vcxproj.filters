@@ -30,7 +30,7 @@
     <ClInclude Include="src\Serializer\JsonSerializer.h">
       <Filter>Serializer</Filter>
     </ClInclude>
-    <ClInclude Include="src\Serializer\PreferencesManager.h">
+    <ClInclude Include="src\Managers\PreferencesManager.h">
       <Filter>Serializer</Filter>
     </ClInclude>
     <ClInclude Include="src\StateMachine\State.h">
@@ -61,7 +61,7 @@
     <ClCompile Include="src\Serializer\JsonSerializer.cpp">
       <Filter>Serializer</Filter>
     </ClCompile>
-    <ClCompile Include="src\Serializer\PreferencesManager.cpp">
+    <ClCompile Include="src\Managers\PreferencesManager.cpp">
       <Filter>Serializer</Filter>
     </ClCompile>
     <ClCompile Include="src\StateMachine\StateManager.cpp">

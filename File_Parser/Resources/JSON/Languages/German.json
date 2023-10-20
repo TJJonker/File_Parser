@@ -1,8 +1,22 @@
 {
+    "Language": "German",
     "LanguageKeyValues": [
+        { "Intro1": "Willkommen zu deinem Weltraumabenteuer. Lass uns deine Reise anpassen!" },
+        { "Intro2": "Gib jederzeit 'X' ein, um einen Weltraumspaziergang zu machen." },
+        { "Pref1": "Das sind deine aktuellen Anpassungseinstellungen:" },
+        { "Cust1": "Gib die Nummer" },
+        { "Cust2": "ein, um eine Einstellung zu ändern" },
+        { "Q1Status": "Deine aktuell eingestellte Sprache ist:" },
+        { "Q2Status": "Die aktuelle Farbe deines Raumanzugs ist:" },
+        { "Q3Status": "Die aktuelle Anzahl der Triebwerke im Raumschiff ist:" },
+        { "Q4Status": "Der aktuelle Name deines Raumschiffs ist:" },
+        { "Q1Update": "Die neue Sprache ist eingestellt auf:" },
+        { "Q2Update": "Wow! Dein neuer Raumanzug ist farbig:" },
+        { "Q3Update": "Die Anzahl der Triebwerke in deinem Raumschiff ist jetzt:" },
+        { "Q4Update": "Toller Name! Der neue Name deines Schiffs ist:" },
         { "Q1": "Sprache" },
         { "Q2": "Farbe des Raumanzugs" },
-        { "Q3": "Anzahl der Triebwerke des Raumschiffs" },
-        { "Q4": "Name des Raumschiffs" }
+        { "Q3": "Anzahl der Triebwerke im Raumschiff" },
+        { "Q4": "Name für das Raumschiff" }
     ]
 }
