@@ -1,0 +1,9 @@
+{
+    "PreferencesFile": "preferences.json",
+    "LanguagesFiles": [
+        "english.json",
+        "spanish.json",
+        "french.json",
+        "dutch.json"
+    ]
+}

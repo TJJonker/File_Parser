@@ -13,10 +13,10 @@ void OverviewState::OnEnter(const StateData& stateData)
 	LOG_TRACE("Enter 'x' at any time to exit the program.");
 	LOG_TRACE("Your current preferences are:");
 	
-	std::string something;
-	std::cin >> something;
+	//std::string something;
+	//std::cin >> something;
 
-	m_StateManager.ChangeState(StateManager::States::PREFERENCES);
+	//m_StateManager.ChangeState(StateManager::States::PREFERENCES);
 }
 
 void OverviewState::OnExit()

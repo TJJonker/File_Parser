@@ -1,4 +1,4 @@
-workspace "Chat_Program"
+workspace "Parser_Program"
 	architecture "x64"
 	startproject "Chat_Client" 
 
@@ -13,6 +13,7 @@ include "File_Parser"
 
 includeDirs = {}
 includeDirs["SPDLOG"] = "Vendor/spdlog/include"
+includeDirs["RAPIDJSON"] = "Vendor/rapidjson"
 
 libraryDirs = {}
 

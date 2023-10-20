@@ -1,10 +1,14 @@
 #pragma once
 
 // Generic
-#include <iostream>
 #include <vector>
 #include <map>
 #include <string>
+
+#include <iostream>
+#include <istream>
+#include <ostream>
+#include <fstream>
 
 // Debugging
 #include "Debug/Log.h"

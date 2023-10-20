@@ -16,7 +16,8 @@ project "File_Parser"
 
 	includedirs {
 		"src",
-		solutionDir .. "%{includeDirs.SPDLOG}"
+		solutionDir .. "%{includeDirs.SPDLOG}",
+		solutionDir .. "%{includeDirs.RAPIDJSON}"
 	}
 
 	libdirs {
