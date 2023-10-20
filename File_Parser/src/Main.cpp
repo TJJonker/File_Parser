@@ -6,6 +6,7 @@
 #include <document.h>
 #include <filewritestream.h>
 #include <filereadstream.h>
+#include "FileHandler/FileHandler.h"
 
 
 struct ConfigData {
@@ -33,9 +34,9 @@ int main() {
 	stateManager.Initialize(states);
 
 
-	ConfigData data;
-	ReadConfigFromJSON("Resources/JSON/Config.json", data);
-	
+	//ConfigData data;
+	//ReadConfigFromJSON("Resources/JSON/Config.json", data);
+
 }
 
 bool ReadConfigFromJSON(const std::string& filePath, ConfigData& configDataOut) {
