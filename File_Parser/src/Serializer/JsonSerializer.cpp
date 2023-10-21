@@ -132,8 +132,8 @@ bool JsonSerializer::GetPreferences(std::vector<Preferences::Preference>& valueO
 
 bool JsonSerializer::SetPreferences(const std::string& filePath, std::vector<Preferences::Preference>& value)
 {
-    if (!m_Document.IsArray())
-        LOGANDRETURN("Document is not an array.");
+    if (!m_Document.IsArray()) 
+        LOGANDRETURN("Document is not an array."); 
 
     unsigned int index = 0;
     for (rapidjson::Value& prefObject : m_Document.GetArray()) {

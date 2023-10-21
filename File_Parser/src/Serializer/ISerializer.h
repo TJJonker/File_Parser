@@ -14,7 +14,6 @@ struct Preferences {
 	std::vector<Preference> Preferences;
 };
 
-
 #define LOGANDRETURN(...) { LOG_WARNING(__VA_ARGS__); return false; }
 
 class ISerializer {

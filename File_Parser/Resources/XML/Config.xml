@@ -1,0 +1,10 @@
+<Files>
+	<PreferencesFile>Resources/XML/Preferences.xml</PreferencesFile>
+	<LanguagesFiles>
+		<LanguageFile>Resources/XML/Languages/English.xml</LanguageFile>
+		<LanguageFile>Resources/XML/Languages/Dutch.xml</LanguageFile>
+		<LanguageFile>Resources/XML/Languages/Spanish.xml</LanguageFile>
+		<LanguageFile>Resources/XML/Languages/German.xml</LanguageFile>
+		<LanguageFile>Resources/XML/Languages/Alien.xml</LanguageFile>
+	</LanguagesFiles>
+</Files>

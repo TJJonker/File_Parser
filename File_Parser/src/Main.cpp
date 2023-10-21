@@ -3,15 +3,19 @@
 #include "StateMachine/States/PreferencesState.h"
 #include "StateMachine/States/ChangePreferenceState.h"
 #include <Serializer/JsonSerializer.h>
+#include <Serializer/XmlSerializer.h>
 
 const std::string ConfigFilePath = "Resources/JSON/Config.json";
+//const std::string ConfigFilePath = "Resources/XML/Config.xml";
 
 int main() {
 	Debug::Log::Init();
 
 	ConfigData configData; 
 	Preferences preferences; 
+
 	PreferencesManager preferencesManager(std::make_shared<JsonSerializer>()); 
+	//PreferencesManager preferencesManager(std::make_shared<XmlSerializer>());
 
 	std::vector<Language> languages;  
 	preferencesManager.DeserializeData(ConfigFilePath, configData, languages, preferences); 
@@ -25,6 +29,4 @@ int main() {
 	states[StateManager::States::PREFERENCES] = std::make_shared<PreferencesState>(stateManager);
 	states[StateManager::States::CHANGEPREFERENCE] = std::make_shared<ChangePreferenceState>(stateManager);
 	stateManager.Initialize(states);
-
-
 }

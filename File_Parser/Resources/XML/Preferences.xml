@@ -1,0 +1,22 @@
+<Preferences>
+    <Preference>
+        <question>Q1</question>
+        <answer>4</answer>
+        <options>1,2,3,4,5</options>
+    </Preference>
+    <Preference>
+        <question>Q2</question>
+        <answer>4</answer>
+        <options>Blue,Red,Green,Gold,Purple</options>
+    </Preference>
+    <Preference>
+        <question>Q3</question>
+        <answer>2</answer>
+        <options>1,2,3,4,5</options>
+    </Preference>
+    <Preference>
+        <question>Q4</question>
+        <answer>The Planet Remover</answer>
+        <options/>
+    </Preference>
+</Preferences>

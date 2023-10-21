@@ -1,0 +1,89 @@
+<LanguageData>
+	<Language>Dutch</Language>
+	<LanguageKeyValues>
+		<KeyValue>
+			<Key>Intro1</Key>
+			<Value>Welkom bij jouw ruimteavontuur. Laten we jouw reis aanpassen!</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Pref1</Key>
+			<Value>Dit zijn jouw huidige aanpassingsinstellingen:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Cust1</Key>
+			<Value>Voer het nummer</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Cust2</Key>
+			<Value>in om een voorkeur te wijzigen</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Error1</Key>
+			<Value>Dat was geen geldige optie. Laten we het opnieuw proberen!</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q1Status</Key>
+			<Value>Jouw huidige ingestelde taal is:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q2Status</Key>
+			<Value>De huidige kleur van jouw ruimtepak is:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q3Status</Key>
+			<Value>Het huidige aantal stuwkrachten op het ruimteschip is:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q4Status</Key>
+			<Value>De huidige naam van jouw ruimteschip is:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q1Update1</Key>
+			<Value>Stel jouw taal in op:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q2Update1</Key>
+			<Value>Verander de kleur van jouw ruimtepak naar:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q3Update1</Key>
+			<Value>Verander het aantal stuwkrachten naar:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q4Update1</Key>
+			<Value>Verander de naam van jouw schip naar:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q1Update2</Key>
+			<Value>De nieuwe taal is ingesteld op:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q2Update2</Key>
+			<Value>Wow! Jouw nieuwe ruimtepak is gekleurd:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q3Update2</Key>
+			<Value>Het aantal stuwkrachten op jouw ruimteschip bedraagt nu:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q4Update2</Key>
+			<Value>Geweldige naam! De nieuwe naam van jouw schip is:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q1</Key>
+			<Value>Taal</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q2</Key>
+			<Value>Kleur ruimtepak</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q3</Key>
+			<Value>Aantal stuwkrachten op het ruimteschip</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q4</Key>
+			<Value>Naam voor het ruimteschip</Value>
+		</KeyValue>
+	</LanguageKeyValues>
+</LanguageData>

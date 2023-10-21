@@ -1,0 +1,89 @@
+<LanguageData>
+	<Language>Spanish</Language>
+	<LanguageKeyValues>
+		<KeyValue>
+			<Key>Intro1</Key>
+			<Value>Bienvenido a tu aventura espacial. ¡Personalicemos tu viaje!</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Pref1</Key>
+			<Value>Estas son tus configuraciones actuales:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Cust1</Key>
+			<Value>Ingresa el número</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Cust2</Key>
+			<Value>para cambiar una preferencia</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Error1</Key>
+			<Value>Esa no fue una opción válida. ¡Intentémoslo de nuevo!</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q1Status</Key>
+			<Value>Tu idioma actualmente configurado es:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q2Status</Key>
+			<Value>El color actual de tu traje espacial es:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q3Status</Key>
+			<Value>La cantidad actual de propulsores en la nave espacial es:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q4Status</Key>
+			<Value>El nombre actual de tu nave espacial es:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q1Update1</Key>
+			<Value>Configura tu idioma en:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q2Update1</Key>
+			<Value>Cambia el color de tu traje espacial a:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q3Update1</Key>
+			<Value>Cambia la cantidad de propulsores a:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q4Update1</Key>
+			<Value>Cambia el nombre de tu nave a:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q1Update2</Key>
+			<Value>El nuevo idioma se ha configurado en:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q2Update2</Key>
+			<Value>¡Wow! Tu nuevo traje espacial está coloreado:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q3Update2</Key>
+			<Value>La cantidad de propulsores en tu nave espacial es ahora:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q4Update2</Key>
+			<Value>¡Gran nombre! El nuevo nombre de tu nave es:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q1</Key>
+			<Value>Idioma</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q2</Key>
+			<Value>Color del traje espacial</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q3</Key>
+			<Value>Cantidad de propulsores en la nave espacial</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q4</Key>
+			<Value>Nombre para la nave espacial</Value>
+		</KeyValue>
+	</LanguageKeyValues>
+</LanguageData>

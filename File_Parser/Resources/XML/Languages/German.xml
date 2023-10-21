@@ -1,0 +1,89 @@
+<LanguageData>
+	<Language>German</Language>
+	<LanguageKeyValues>
+		<KeyValue>
+			<Key>Intro1</Key>
+			<Value>Willkommen zu deinem Weltraumabenteuer. Lass uns deine Reise anpassen!</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Pref1</Key>
+			<Value>Das sind deine aktuellen Anpassungseinstellungen:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Cust1</Key>
+			<Value>Gib die Nummer</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Cust2</Key>
+			<Value>ein, um eine Einstellung zu andern</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Error1</Key>
+			<Value>Das war keine gültige Option. Lass es uns erneut versuchen!</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q1Status</Key>
+			<Value>Deine aktuell eingestellte Sprache ist:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q2Status</Key>
+			<Value>Die aktuelle Farbe deines Raumanzugs ist:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q3Status</Key>
+			<Value>Die aktuelle Anzahl der Triebwerke im Raumschiff ist:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q4Status</Key>
+			<Value>Der aktuelle Name deines Raumschiffs ist:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q1Update1</Key>
+			<Value>Stelle deine Sprache ein auf:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q2Update1</Key>
+			<Value>Wow! Dein neuer Raumanzug ist farbig:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q3Update1</Key>
+			<Value>Die Anzahl der Triebwerke in deinem Raumschiff ist jetzt:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q4Update1</Key>
+			<Value>Toller Name! Der neue Name deines Schiffs ist:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q1Update2</Key>
+			<Value>Die neue Sprache ist eingestellt auf:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q2Update2</Key>
+			<Value>Wow! Dein neuer Raumanzug ist farbig:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q3Update2</Key>
+			<Value>Die Anzahl der Triebwerke in deinem Raumschiff ist jetzt:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q4Update2</Key>
+			<Value>Toller Name! Der neue Name deines Schiffs ist:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q1</Key>
+			<Value>Sprache</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q2</Key>
+			<Value>Farbe des Raumanzugs</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q3</Key>
+			<Value>Anzahl der Triebwerke im Raumschiff</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q4</Key>
+			<Value>Name fur das Raumschiff</Value>
+		</KeyValue>
+	</LanguageKeyValues>
+</LanguageData>

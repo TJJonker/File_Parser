@@ -51,6 +51,8 @@
     <ClInclude Include="src\pch.h" />
     <ClInclude Include="src\Managers\LanguageLibrary.h" />
     <ClInclude Include="src\Managers\PreferencesWrapper.h" />
+    <ClInclude Include="src\Vendor\tinyxml2.h" />
+    <ClInclude Include="src\Serializer\XmlSerializer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Debug\Log.cpp">
@@ -80,6 +82,8 @@
     </ClCompile>
     <ClCompile Include="src\pch.cpp" />
     <ClCompile Include="src\Managers\LanguageLibrary.cpp" />
+    <ClCompile Include="src\Vendor\tinyxml2.cpp" />
+    <ClCompile Include="src\Serializer\XmlSerializer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\JSON\Config.json" />
@@ -89,5 +93,14 @@
     <None Include="Resources\JSON\Languages\Dutch.json" />
     <None Include="Resources\JSON\Languages\Spanish.json" />
     <None Include="Resources\JSON\Languages\German.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Resources\XML\Preferences.xml" />
+    <Xml Include="Resources\XML\Config.xml" />
+    <Xml Include="Resources\XML\Languages\Alien.xml" />
+    <Xml Include="Resources\XML\Languages\Dutch.xml" />
+    <Xml Include="Resources\XML\Languages\English.xml" />
+    <Xml Include="Resources\XML\Languages\German.xml" />
+    <Xml Include="Resources\XML\Languages\Spanish.xml" />
   </ItemGroup>
 </Project>

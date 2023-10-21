@@ -1,0 +1,89 @@
+<LanguageData>
+	<Language>Alien</Language>
+	<LanguageKeyValues>
+		<KeyValue>
+			<Key>Intro1</Key>
+			<Value>Greetings from the cosmic void. Adjust the quantum flux of your interstellar journey!</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Pref1</Key>
+			<Value>Behold the oscillating plasma configurations:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Cust1</Key>
+			<Value>Dial into the numerical sequence</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Cust2</Key>
+			<Value>for molecular realignment</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Error1</Key>
+			<Value>Invalid option. Let's attempt once more!</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q1Status</Key>
+			<Value>Your currently set cosmic language is:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q2Status</Key>
+			<Value>The hue of your cosmic attire resonates in the spectrum of:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q3Status</Key>
+			<Value>The quantum propulsion quantifier reads:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q4Status</Key>
+			<Value>Nominal designation of your star vessel is:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q1Update1</Key>
+			<Value>Set your cosmic lexicon to:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q2Update1</Key>
+			<Value>Shift the color of your cosmic attire to:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q3Update1</Key>
+			<Value>Modify the quantum thruster quantity to:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q4Update1</Key>
+			<Value>Transform the name of your cosmic entity to:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q1Update2</Key>
+			<Value>The new cosmic lexicon is set to:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q2Update2</Key>
+			<Value>Astounding! Your cosmic attire is now hued:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q3Update2</Key>
+			<Value>The quantum manifold of your starship is now aligned with:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q4Update2</Key>
+			<Value>Stellar entity designation transitions to:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q1</Key>
+			<Value>Cosmic Code</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q2</Key>
+			<Value>Chromatic Shift</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q3</Key>
+			<Value>Quantum Propulsion</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q4</Key>
+			<Value>Stellar Moniker</Value>
+		</KeyValue>
+	</LanguageKeyValues>
+</LanguageData>

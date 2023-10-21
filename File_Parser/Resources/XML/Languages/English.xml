@@ -1,0 +1,89 @@
+<LanguageData>
+	<Language>English</Language>
+	<LanguageKeyValues>
+		<KeyValue>
+			<Key>Intro1</Key>
+			<Value>Welcome to your space adventure. Let's customize your travel!</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Pref1</Key>
+			<Value>These are your current customization settings:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Cust1</Key>
+			<Value>Enter the number</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Cust2</Key>
+			<Value>to change a preference</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Error1</Key>
+			<Value>That was not a valid option. Let's try again!</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q1Status</Key>
+			<Value>Your currently set language is:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q2Status</Key>
+			<Value>The current color of your spacesuit is:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q3Status</Key>
+			<Value>The current amount of thrusters on the spaceship is:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q4Status</Key>
+			<Value>The current name of your spaceship is:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q1Update1</Key>
+			<Value>Set your language to:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q2Update1</Key>
+			<Value>Change the color of your spacesuit to:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q3Update1</Key>
+			<Value>Change the amount of thruster to:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q4Update1</Key>
+			<Value>Change the name of your ship to:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q1Update2</Key>
+			<Value>The new language is set to:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q2Update2</Key>
+			<Value>Wow! You're new spacesuit is colored:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q3Update2</Key>
+			<Value>The amount of thruster on your spaceship is now:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q4Update2</Key>
+			<Value>Great name! Your ship's new name is:</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q1</Key>
+			<Value>Language</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q2</Key>
+			<Value>Color spacesuit</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q3</Key>
+			<Value>Amount of thrusters on the spaceship</Value>
+		</KeyValue>
+		<KeyValue>
+			<Key>Q4</Key>
+			<Value>Name for the spaceship</Value>
+		</KeyValue>
+	</LanguageKeyValues>
+</LanguageData>
