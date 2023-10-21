@@ -37,7 +37,6 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <AdditionalIncludeDirectories>src;..\Vendor\spdlog\include;..\Vendor\rapidjson;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
@@ -52,56 +51,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\Managers\LanguageLibrary.h" />
     <ClInclude Include="src\Debug\Log.h" />
     <ClInclude Include="src\FileHandler\FileHandler.h" />
+    <ClInclude Include="src\Managers\LanguageLibrary.h" />
+    <ClInclude Include="src\Managers\PreferencesManager.h" />
     <ClInclude Include="src\Managers\PreferencesWrapper.h" />
     <ClInclude Include="src\Serializer\ISerializer.h" />
     <ClInclude Include="src\Serializer\JsonSerializer.h" />
-    <ClInclude Include="src\Managers\PreferencesManager.h" />
+    <ClInclude Include="src\Serializer\XmlSerializer.h" />
     <ClInclude Include="src\StateMachine\State.h" />
     <ClInclude Include="src\StateMachine\StateManager.h" />
     <ClInclude Include="src\StateMachine\States\ChangePreferenceState.h" />
     <ClInclude Include="src\StateMachine\States\OverviewState.h" />
     <ClInclude Include="src\StateMachine\States\PreferencesState.h" />
-    <ClInclude Include="src\pch.h" />
     <ClInclude Include="src\Vendor\tinyxml2.h" />
-    <ClInclude Include="src\Serializer\XmlSerializer.h" />
+    <ClInclude Include="src\pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Managers\LanguageLibrary.cpp" />
     <ClCompile Include="src\Debug\Log.cpp" />
     <ClCompile Include="src\FileHandler\FileHandler.cpp" />
     <ClCompile Include="src\Main.cpp" />
-    <ClCompile Include="src\Serializer\JsonSerializer.cpp" />
+    <ClCompile Include="src\Managers\LanguageLibrary.cpp" />
     <ClCompile Include="src\Managers\PreferencesManager.cpp" />
+    <ClCompile Include="src\Serializer\JsonSerializer.cpp" />
+    <ClCompile Include="src\Serializer\XmlSerializer.cpp" />
     <ClCompile Include="src\StateMachine\StateManager.cpp" />
     <ClCompile Include="src\StateMachine\States\ChangePreferenceState.cpp" />
     <ClCompile Include="src\StateMachine\States\OverviewState.cpp" />
     <ClCompile Include="src\StateMachine\States\PreferencesState.cpp" />
-    <ClCompile Include="src\pch.cpp">
-      <PrecompiledHeader>Create</PrecompiledHeader>
-    </ClCompile>
     <ClCompile Include="src\Vendor\tinyxml2.cpp" />
-    <ClCompile Include="src\Serializer\XmlSerializer.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\JSON\Config.json" />
-    <None Include="Resources\JSON\Languages\Alien.json" />
-    <None Include="Resources\JSON\Languages\Dutch.json" />
-    <None Include="Resources\JSON\Languages\English.json" />
-    <None Include="Resources\JSON\Languages\German.json" />
-    <None Include="Resources\JSON\Languages\Spanish.json" />
-    <None Include="Resources\JSON\Preferences.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <Xml Include="Resources\XML\Config.xml" />
-    <Xml Include="Resources\XML\Languages\Alien.xml" />
-    <Xml Include="Resources\XML\Languages\Dutch.xml" />
-    <Xml Include="Resources\XML\Languages\English.xml" />
-    <Xml Include="Resources\XML\Languages\German.xml" />
-    <Xml Include="Resources\XML\Languages\Spanish.xml" />
-    <Xml Include="Resources\XML\Preferences.xml" />
+    <ClCompile Include="src\pch.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

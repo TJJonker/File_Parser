@@ -5,8 +5,8 @@
 #include <Serializer/JsonSerializer.h>
 #include <Serializer/XmlSerializer.h>
 
-const std::string ConfigFilePath = "Resources/JSON/Config.json";
-//const std::string ConfigFilePath = "Resources/XML/Config.xml";
+//const std::string ConfigFilePath = "Resources/JSON/Config.json";
+const std::string ConfigFilePath = "Resources/XML/Config.xml";
 
 int main() {
 	Debug::Log::Init();
@@ -14,12 +14,12 @@ int main() {
 	ConfigData configData; 
 	Preferences preferences; 
 
-	PreferencesManager preferencesManager(std::make_shared<JsonSerializer>()); 
-	//PreferencesManager preferencesManager(std::make_shared<XmlSerializer>());
+	//PreferencesManager preferencesManager(std::make_shared<JsonSerializer>()); 
+	PreferencesManager preferencesManager(std::make_shared<XmlSerializer>());
 
 	std::vector<Language> languages;  
 	preferencesManager.DeserializeData(ConfigFilePath, configData, languages, preferences); 
-	LanguageLibrary languageLibrary(languages, std::stoi(preferences.Preferences[0].Answer));
+	LanguageLibrary languageLibrary(languages, std::stoi(preferences.Preferences[0].Answer) + 1);
 
 	PreferencesWrapper preferencesWrapper{ configData, languageLibrary, preferences, preferencesManager };	
 	StateManager stateManager(preferencesWrapper);

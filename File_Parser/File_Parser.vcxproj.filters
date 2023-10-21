@@ -7,6 +7,9 @@
     <Filter Include="FileHandler">
       <UniqueIdentifier>{E33836F6-4FEE-AEEB-D8E2-A8C24497A5EF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Managers">
+      <UniqueIdentifier>{B34CFEBD-9F19-59C9-C832-4771B45E8E57}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Serializer">
       <UniqueIdentifier>{5F9D492C-4B55-8B79-B45C-64D5A033266A}</UniqueIdentifier>
     </Filter>
@@ -16,6 +19,9 @@
     <Filter Include="StateMachine\States">
       <UniqueIdentifier>{1EEE13DD-8A4F-F1EA-13BD-379D7F1D28AA}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Vendor">
+      <UniqueIdentifier>{935FDCD7-7F01-07AE-68BC-1A0254FD8DFE}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Debug\Log.h">
@@ -24,13 +30,22 @@
     <ClInclude Include="src\FileHandler\FileHandler.h">
       <Filter>FileHandler</Filter>
     </ClInclude>
+    <ClInclude Include="src\Managers\LanguageLibrary.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Managers\PreferencesManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Managers\PreferencesWrapper.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
     <ClInclude Include="src\Serializer\ISerializer.h">
       <Filter>Serializer</Filter>
     </ClInclude>
     <ClInclude Include="src\Serializer\JsonSerializer.h">
       <Filter>Serializer</Filter>
     </ClInclude>
-    <ClInclude Include="src\Managers\PreferencesManager.h">
+    <ClInclude Include="src\Serializer\XmlSerializer.h">
       <Filter>Serializer</Filter>
     </ClInclude>
     <ClInclude Include="src\StateMachine\State.h">
@@ -48,11 +63,10 @@
     <ClInclude Include="src\StateMachine\States\PreferencesState.h">
       <Filter>StateMachine\States</Filter>
     </ClInclude>
+    <ClInclude Include="src\Vendor\tinyxml2.h">
+      <Filter>Vendor</Filter>
+    </ClInclude>
     <ClInclude Include="src\pch.h" />
-    <ClInclude Include="src\Managers\LanguageLibrary.h" />
-    <ClInclude Include="src\Managers\PreferencesWrapper.h" />
-    <ClInclude Include="src\Vendor\tinyxml2.h" />
-    <ClInclude Include="src\Serializer\XmlSerializer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Debug\Log.cpp">
@@ -62,10 +76,16 @@
       <Filter>FileHandler</Filter>
     </ClCompile>
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Managers\LanguageLibrary.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Managers\PreferencesManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
     <ClCompile Include="src\Serializer\JsonSerializer.cpp">
       <Filter>Serializer</Filter>
     </ClCompile>
-    <ClCompile Include="src\Managers\PreferencesManager.cpp">
+    <ClCompile Include="src\Serializer\XmlSerializer.cpp">
       <Filter>Serializer</Filter>
     </ClCompile>
     <ClCompile Include="src\StateMachine\StateManager.cpp">
@@ -80,27 +100,9 @@
     <ClCompile Include="src\StateMachine\States\PreferencesState.cpp">
       <Filter>StateMachine\States</Filter>
     </ClCompile>
+    <ClCompile Include="src\Vendor\tinyxml2.cpp">
+      <Filter>Vendor</Filter>
+    </ClCompile>
     <ClCompile Include="src\pch.cpp" />
-    <ClCompile Include="src\Managers\LanguageLibrary.cpp" />
-    <ClCompile Include="src\Vendor\tinyxml2.cpp" />
-    <ClCompile Include="src\Serializer\XmlSerializer.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\JSON\Config.json" />
-    <None Include="Resources\JSON\Preferences.json" />
-    <None Include="Resources\JSON\Languages\English.json" />
-    <None Include="Resources\JSON\Languages\Alien.json" />
-    <None Include="Resources\JSON\Languages\Dutch.json" />
-    <None Include="Resources\JSON\Languages\Spanish.json" />
-    <None Include="Resources\JSON\Languages\German.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <Xml Include="Resources\XML\Preferences.xml" />
-    <Xml Include="Resources\XML\Config.xml" />
-    <Xml Include="Resources\XML\Languages\Alien.xml" />
-    <Xml Include="Resources\XML\Languages\Dutch.xml" />
-    <Xml Include="Resources\XML\Languages\English.xml" />
-    <Xml Include="Resources\XML\Languages\German.xml" />
-    <Xml Include="Resources\XML\Languages\Spanish.xml" />
   </ItemGroup>
 </Project>
