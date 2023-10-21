@@ -1,6 +1,8 @@
 #include "pch.h"
 #include "JsonSerializer.h"
 #include <FileHandler/FileHandler.h>
+#include <stringbuffer.h>
+#include <writer.h>
 
 bool JsonSerializer::SetSource(const std::string& filePath)
 {
@@ -20,6 +22,7 @@ bool JsonSerializer::GetStringAttribute(const std::string& attributeName, std::s
         LOGANDRETURN("Attribute '{0}' is not a string attribute.", attributeName);
 
     valueOut = value.GetString();
+
     return true;
 }
 
@@ -124,5 +127,34 @@ bool JsonSerializer::GetPreferences(std::vector<Preferences::Preference>& valueO
         valueOut.push_back(preference);
     }
 
-    return false;
+    return true;
+}
+
+bool JsonSerializer::SetPreferences(const std::string& filePath, std::vector<Preferences::Preference>& value)
+{
+    if (!m_Document.IsArray())
+        LOGANDRETURN("Document is not an array.");
+
+    unsigned int index = 0;
+    for (rapidjson::Value& prefObject : m_Document.GetArray()) {
+        if (!prefObject.IsObject())
+            LOGANDRETURN("Array does not contain an object.");
+
+        // Answer
+        if (!prefObject.HasMember("answer"))
+            LOGANDRETURN("Attribute 'answer' does not exist.");
+        if (!prefObject["answer"].IsString())
+            LOGANDRETURN("Attribute 'answer' is not a string.");
+        prefObject["answer"].SetString(value[index].Answer.c_str(), value[index].Answer.size());
+
+        index++;
+    }
+
+    rapidjson::StringBuffer buffer;
+    buffer.Clear();
+    rapidjson::Writer<rapidjson::StringBuffer> writer(buffer);
+    m_Document.Accept(writer);
+    FileHandler::WriteFile(filePath, buffer.GetString());
+
+    return true;
 }

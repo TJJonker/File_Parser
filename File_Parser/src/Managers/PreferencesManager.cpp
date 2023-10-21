@@ -26,6 +26,8 @@ void PreferencesManager::DeserializeData(const std::string& configFilePath, Conf
 	}
 }
 
-void PreferencesManager::SerializeData(const std::string& configFilePath, const ConfigData& configOut, const Language& languagesOut, const Preferences& preferencesOut)
+void PreferencesManager::SerializeData(const std::string& preferencesPath, Preferences& preferences)
 {
+	m_Serializer->SetSource(preferencesPath);
+	m_Serializer->SetPreferences(preferencesPath, preferences.Preferences);
 }

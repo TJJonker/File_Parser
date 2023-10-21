@@ -2,18 +2,26 @@
     "Language" :  "English",
     "LanguageKeyValues": [
         { "Intro1": "Welcome to your space adventure. Let's customize your travel!" },
-        { "Intro2": "Enter X anytime to make a space walk." },
         { "Pref1": "These are your current customization settings:" },
         { "Cust1": "Enter the number" },
         { "Cust2": "to change a preference" },
+        { "Error1": "That was not a valid option. Let's try again!" },
+        
         { "Q1Status": "Your currently set language is:" },
         { "Q2Status": "The current color of your spacesuit is:" },
         { "Q3Status": "The current amount of thrusters on the spaceship is:" },
         { "Q4Status": "The current name of your spaceship is:" },
-        { "Q1Update": "The new language is set to:" },
-        { "Q2Update": "Wow! You're new spacesuit is colored:" },
-        { "Q3Update": "The amount of thruster on your spaceship is now:" },
-        { "Q4Update": "Great name! Your ship's new name is:" },
+        
+        { "Q1Update1": "Set your language to:" },
+        { "Q2Update1": "Change the color of your spacesuit to:" },
+        { "Q3Update1": "Change the amount of thruster to:" },
+        { "Q4Update1": "Change the name of your ship to:" },
+        
+        { "Q1Update2": "The new language is set to:" },
+        { "Q2Update2": "Wow! You're new spacesuit is colored:" },
+        { "Q3Update2": "The amount of thruster on your spaceship is now:" },
+        { "Q4Update2": "Great name! Your ship's new name is:" },
+        
         { "Q1": "Language" },
         { "Q2": "Color spacesuit" },
         { "Q3": "Amount of thrusters on the spaceship" },

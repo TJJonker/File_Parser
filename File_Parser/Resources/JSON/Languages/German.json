@@ -2,7 +2,6 @@
     "Language": "German",
     "LanguageKeyValues": [
         { "Intro1": "Willkommen zu deinem Weltraumabenteuer. Lass uns deine Reise anpassen!" },
-        { "Intro2": "Gib jederzeit 'X' ein, um einen Weltraumspaziergang zu machen." },
         { "Pref1": "Das sind deine aktuellen Anpassungseinstellungen:" },
         { "Cust1": "Gib die Nummer" },
         { "Cust2": "ein, um eine Einstellung zu ändern" },

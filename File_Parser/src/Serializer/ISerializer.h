@@ -27,4 +27,5 @@ public:
 
 	// Hacky as well...
 	virtual bool GetPreferences(std::vector<Preferences::Preference>& valueOut) = 0;
+	virtual bool SetPreferences(const std::string& filePath, std::vector<Preferences::Preference>& value) = 0;
 };

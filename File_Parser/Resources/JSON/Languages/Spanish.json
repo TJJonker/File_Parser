@@ -2,7 +2,6 @@
     "Language": "Spanish",
     "LanguageKeyValues": [
         { "Intro1": "Bienvenido a tu aventura espacial. ¡Personalicemos tu viaje!" },
-        { "Intro2": "Ingresa 'X' en cualquier momento para dar un paseo espacial." },
         { "Pref1": "Estas son tus configuraciones actuales:" },
         { "Cust1": "Ingresa el número" },
         { "Cust2": "para cambiar una preferencia" },

@@ -13,5 +13,8 @@ public:
 
 	void OnEnter(const StateData& stateData) override;
 	void OnExit() override;
+
+private:
+	std::string GetCertainValue(std::vector<std::string> possibleOptions);
 };
 

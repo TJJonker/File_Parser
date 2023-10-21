@@ -1,5 +1,6 @@
 #pragma once
 #include "State.h"
+#include <Managers/PreferencesWrapper.h>
 
 class StateManager
 {
@@ -9,13 +10,14 @@ public:
 		PREFERENCES,
 		CHANGEPREFERENCE,
 	};
+	PreferencesWrapper& m_PreferencesWrapper;
 
 private:
 	std::map<States, std::shared_ptr<State>> m_States;
 	States m_CurrentState;
 
 public:
-	StateManager();
+	StateManager(PreferencesWrapper& preferencesWrapper);
 	~StateManager();
 
 	void Initialize(std::map<States, std::shared_ptr<State>> states, States defaultState = States::OVERVIEW);

@@ -1,8 +1,8 @@
 #include "pch.h"
 #include "StateManager.h"
 
-StateManager::StateManager()
-	: m_CurrentState(States::OVERVIEW) { }
+StateManager::StateManager(PreferencesWrapper& preferencesWrapper)
+	: m_CurrentState(States::OVERVIEW), m_PreferencesWrapper(preferencesWrapper) { }
 
 StateManager::~StateManager()
 {

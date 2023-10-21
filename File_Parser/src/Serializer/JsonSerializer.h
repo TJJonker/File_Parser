@@ -15,5 +15,6 @@ public:
 
 	// Hacky
 	bool GetPreferences(std::vector<Preferences::Preference>& valueOut) override;
+	bool SetPreferences(const std::string& filePath, std::vector<Preferences::Preference>& value) override;
 };
 

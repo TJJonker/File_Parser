@@ -2,7 +2,6 @@
     "Language": "Dutch",
     "LanguageKeyValues": [
         { "Intro1": "Welkom bij jouw ruimteavontuur. Laten we jouw reis aanpassen!" },
-        { "Intro2": "Voer 'X' in op elk moment om een ruimtewandeling te maken." },
         { "Pref1": "Dit zijn jouw huidige aanpassingsinstellingen:" },
         { "Cust1": "Voer het nummer" },
         { "Cust2": "in om een voorkeur te wijzigen" },

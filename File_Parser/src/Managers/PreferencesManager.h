@@ -22,6 +22,6 @@ public:
 	PreferencesManager(std::shared_ptr<ISerializer> serializer);
 
 	void DeserializeData(const std::string& configFilePath, ConfigData& configOut, std::vector<Language>& languagesOut, Preferences& preferencesOut);
-	void SerializeData(const std::string& configFilePath, const ConfigData& configOut, const Language& languagesOut, const Preferences& preferencesOut);
+	void SerializeData(const std::string& preferencesPath, Preferences& preferences);
 };
 

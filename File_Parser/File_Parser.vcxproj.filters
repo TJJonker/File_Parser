@@ -49,6 +49,8 @@
       <Filter>StateMachine\States</Filter>
     </ClInclude>
     <ClInclude Include="src\pch.h" />
+    <ClInclude Include="src\Managers\LanguageLibrary.h" />
+    <ClInclude Include="src\Managers\PreferencesWrapper.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Debug\Log.cpp">
@@ -77,10 +79,15 @@
       <Filter>StateMachine\States</Filter>
     </ClCompile>
     <ClCompile Include="src\pch.cpp" />
+    <ClCompile Include="src\Managers\LanguageLibrary.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\JSON\Config.json" />
     <None Include="Resources\JSON\Preferences.json" />
     <None Include="Resources\JSON\Languages\English.json" />
+    <None Include="Resources\JSON\Languages\Alien.json" />
+    <None Include="Resources\JSON\Languages\Dutch.json" />
+    <None Include="Resources\JSON\Languages\Spanish.json" />
+    <None Include="Resources\JSON\Languages\German.json" />
   </ItemGroup>
 </Project>
