@@ -5,7 +5,14 @@
 class LanguageLibrary
 {
 private:
+	/// <summary>
+	/// List of libraries.
+	/// </summary>
 	std::vector<Language>& m_Languages;
+
+	/// <summary>
+	/// Index of the active language.
+	/// </summary>
 	unsigned int m_ActiveLanguage;
 
 public:

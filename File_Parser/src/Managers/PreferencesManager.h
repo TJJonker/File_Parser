@@ -1,11 +1,17 @@
 #pragma once
 #include "Serializer/ISerializer.h"
 
+/// <summary>
+/// Struct containing configurations data.
+/// </summary>
 struct ConfigData {
 	std::string PreferencesFile;
 	std::vector<std::string> LanguagesFiles;
 };
 
+/// <summary>
+/// Struct containing language data.
+/// </summary>
 struct Language {
 	std::string LanguageName;
 	std::map<std::string, std::string> KeyValues;
@@ -16,6 +22,9 @@ struct Language {
 class PreferencesManager
 {
 private:
+	/// <summary>
+	/// Pointer to the serialization method.
+	/// </summary>
 	std::shared_ptr<ISerializer> m_Serializer;
 
 public:

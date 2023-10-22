@@ -3,6 +3,12 @@
 
 #define LOGANDRETURN(...) { LOG_ERROR(__VA_ARGS__); return false; }
 
+/// <summary>
+/// Reads a file and will return a string containing the file/data.
+/// </summary>
+/// <param name="filePath">Path to the file.</param>
+/// <param name="dataOut">String containing the file/data.</param>
+/// <returns>True if successfull, false if failed.</returns>
 bool FileHandler::ReadFile(const std::string& filePath, std::string& dataOut)
 {
     FILE* file = nullptr;
@@ -32,6 +38,12 @@ bool FileHandler::ReadFile(const std::string& filePath, std::string& dataOut)
     return true;
 }
 
+/// <summary>
+/// Writes data to an external file.
+/// </summary>
+/// <param name="filePath">Path to the file.</param>
+/// <param name="data">Data to be stored in the file.</param>
+/// <returns>True if successfull, false if failed.</returns>
 bool FileHandler::WriteFile(const std::string& filePath, const char* data)
 {
     FILE* file = nullptr;

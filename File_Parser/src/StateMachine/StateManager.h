@@ -5,15 +5,29 @@
 class StateManager
 {
 public:
+	/// <summary>
+	/// Overview of possible states to switch to.
+	/// </summary>
 	enum class States {
 		OVERVIEW,
 		PREFERENCES,
 		CHANGEPREFERENCE,
 	};
+
+	/// <summary>
+	/// Reference to the wrapper containing the preferences data.
+	/// </summary>
 	PreferencesWrapper& m_PreferencesWrapper;
 
 private:
+	/// <summary>
+	/// List of states.
+	/// </summary>
 	std::map<States, std::shared_ptr<State>> m_States;
+
+	/// <summary>
+	/// Currently active state.
+	/// </summary>
 	States m_CurrentState;
 
 public:

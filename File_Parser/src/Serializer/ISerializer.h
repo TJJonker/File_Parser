@@ -4,6 +4,10 @@
 #include <map>
 
 // Hacky... Shouldn't be here...
+
+/// <summary>
+/// Struct containing the data from the preferences file.
+/// </summary>
 struct Preferences {
 	struct Preference {
 		std::string Question;

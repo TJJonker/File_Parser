@@ -6,11 +6,22 @@
 #define CONFIG m_StateManager.m_PreferencesWrapper.ConfigData
 #define PREFMAN m_StateManager.m_PreferencesWrapper.PreferencesManager
 
+/// <summary>
+/// Constructor for ChangePreferenceState
+/// </summary>
+/// <param name="stateManager">Reference to the stateManager for switching state.</param>
 ChangePreferenceState::ChangePreferenceState(StateManager& stateManager) 
 	: m_StateManager(stateManager) { }
 
+/// <summary>
+/// Destructor for ChangePreferencesState.
+/// </summary>
 ChangePreferenceState::~ChangePreferenceState() { }
 
+/// <summary>
+/// Run upon Entering the current State.
+/// </summary>
+/// <param name="stateData">Additional data given fromout the previous state.</param>
 void ChangePreferenceState::OnEnter(const StateData& stateData)
 {
 	std::string status = "Q" + std::to_string(stateData.data + 1) + "Status";
@@ -72,8 +83,16 @@ void ChangePreferenceState::OnEnter(const StateData& stateData)
 	m_StateManager.ChangeState(StateManager::States::PREFERENCES);
 }
 
+/// <summary>
+/// Run upon exiting the current state.
+/// </summary>
 void ChangePreferenceState::OnExit() { }
 
+/// <summary>
+/// Asks for user input and makes sure the input is valid.
+/// </summary>
+/// <param name="possibleOptions">Input options considered valid.</param>
+/// <returns>User input.</returns>
 std::string ChangePreferenceState::GetCertainValue(std::vector<std::string> possibleOptions)
 {
 	std::string choice;

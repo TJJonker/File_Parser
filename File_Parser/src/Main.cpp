@@ -5,6 +5,7 @@
 #include <Serializer/JsonSerializer.h>
 #include <Serializer/XmlSerializer.h>
 
+/// Switch comment these two lines
 //const std::string ConfigFilePath = "Resources/JSON/Config.json";
 const std::string ConfigFilePath = "Resources/XML/Config.xml";
 
@@ -14,6 +15,7 @@ int main() {
 	ConfigData configData; 
 	Preferences preferences; 
 
+	/// Switch comment these two lines
 	//PreferencesManager preferencesManager(std::make_shared<JsonSerializer>()); 
 	PreferencesManager preferencesManager(std::make_shared<XmlSerializer>());
 

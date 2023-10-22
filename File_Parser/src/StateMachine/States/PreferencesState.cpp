@@ -4,11 +4,22 @@
 #define LANGLIB m_StateManager.m_PreferencesWrapper.LanguageLibrary
 #define PREFS m_StateManager.m_PreferencesWrapper.Preferences.Preferences
 
+/// <summary>
+/// Constructor for PreferencesState.
+/// </summary>
+/// <param name="stateManager">Reference to the stateManager for switching state.</param>
 PreferencesState::PreferencesState(StateManager& stateManager)
 	: m_StateManager(stateManager) { }
 
+/// <summary>
+/// Destructor for PreferencesState.
+/// </summary>
 PreferencesState::~PreferencesState() { }
 
+/// <summary>
+/// Run upon Entering the current State.
+/// </summary>
+/// <param name="stateData">Additional data given fromout the previous state.</param>
 void PreferencesState::OnEnter(const StateData& stateData)
 {
 	LOG_TRACE("");
@@ -39,8 +50,16 @@ void PreferencesState::OnEnter(const StateData& stateData)
 	m_StateManager.ChangeState(StateManager::States::CHANGEPREFERENCE, data);
 }
 
+/// <summary>
+/// Run upon exiting the current state.
+/// </summary>
 void PreferencesState::OnExit() { }
 
+/// <summary>
+/// Asks for user input and makes sure the input is valid.
+/// </summary>
+/// <param name="possibleOptions">Input options considered valid.</param>
+/// <returns>User input.</returns>
 std::string PreferencesState::GetCertainValue(std::vector<std::string> possibleOptions)
 {
 	std::string choice;

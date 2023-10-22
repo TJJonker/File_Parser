@@ -4,6 +4,11 @@
 #include <stringbuffer.h>
 #include <writer.h>
 
+/// <summary>
+/// Sets the currently active source.
+/// </summary>
+/// <param name="filePath">Path to the currently active file.</param>
+/// <returns>True if successfull, false if failed</returns>
 bool JsonSerializer::SetSource(const std::string& filePath)
 {
     std::string data;
@@ -12,6 +17,12 @@ bool JsonSerializer::SetSource(const std::string& filePath)
     return true;
 }
 
+/// <summary>
+/// Returns the string attribute with the given name.
+/// </summary>
+/// <param name="attributeName">Name of the attribute.</param>
+/// <param name="valueOut">Value of the attrribute.</param>
+/// <returns>True if successfull, false if failed</returns>
 bool JsonSerializer::GetStringAttribute(const std::string& attributeName, std::string& valueOut)
 {
     if (!m_Document.HasMember(attributeName.c_str()))
@@ -26,6 +37,12 @@ bool JsonSerializer::GetStringAttribute(const std::string& attributeName, std::s
     return true;
 }
 
+/// <summary>
+/// Returns the int attribute with the given name.
+/// </summary>
+/// <param name="attributeName">Name of the attribute.</param>
+/// <param name="valueOut">Value of the attrribute.</param>
+/// <returns>True if successfull, false if failed</returns>
 bool JsonSerializer::GetIntAttribute(const std::string& attributeName, int& valueOut)
 {
     if (!m_Document.HasMember(attributeName.c_str()))
@@ -39,6 +56,12 @@ bool JsonSerializer::GetIntAttribute(const std::string& attributeName, int& valu
     return true;
 }
 
+/// <summary>
+/// Returns the vector<string> attribute with the given name.
+/// </summary>
+/// <param name="attributeName">Name of the attribute.</param>
+/// <param name="valueOut">Value of the attrribute.</param>
+/// <returns>True if successfull, false if failed</returns>
 bool JsonSerializer::GetStringVectorAttribute(const std::string& attributeName, std::vector<std::string>& valueOut)
 {
     if (!m_Document.HasMember(attributeName.c_str()))
@@ -59,6 +82,12 @@ bool JsonSerializer::GetStringVectorAttribute(const std::string& attributeName, 
     return true;
 }
 
+/// <summary>
+/// Returns the map<string, string> attribute with the given name.
+/// </summary>
+/// <param name="attributeName">Name of the attribute.</param>
+/// <param name="valueOut">Value of the attrribute.</param>
+/// <returns>True if successfull, false if failed</returns>
 bool JsonSerializer::GetStringStringMapAttribute(const std::string& attributeName, std::map<std::string, std::string>& valueOut)
 {
     if (!m_Document.HasMember(attributeName.c_str())) 
@@ -84,6 +113,11 @@ bool JsonSerializer::GetStringStringMapAttribute(const std::string& attributeNam
     return true;
 }
 
+/// <summary>
+/// Returns the preferences data.
+/// </summary>
+/// <param name="valueOut">Value of the attrribute.</param>
+/// <returns>True if successfull, false if failed</returns>
 bool JsonSerializer::GetPreferences(std::vector<Preferences::Preference>& valueOut)
 {
     if (!m_Document.IsArray())
@@ -130,6 +164,11 @@ bool JsonSerializer::GetPreferences(std::vector<Preferences::Preference>& valueO
     return true;
 }
 
+/// <summary>
+/// Sets the preferences data.
+/// </summary>
+/// <param name="value">List of preferences, containing data.</param>
+/// <returns>True if successfull, false if failed</returns>
 bool JsonSerializer::SetPreferences(const std::string& filePath, std::vector<Preferences::Preference>& value)
 {
     if (!m_Document.IsArray()) 

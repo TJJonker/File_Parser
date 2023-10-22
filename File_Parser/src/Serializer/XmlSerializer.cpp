@@ -2,6 +2,11 @@
 #include "XmlSerializer.h"
 #include <FileHandler/FileHandler.h>
 
+/// <summary>
+/// Sets the currently active source.
+/// </summary>
+/// <param name="filePath">Path to the currently active file.</param>
+/// <returns>True if successfull, false if failed</returns>
 bool XmlSerializer::SetSource(const std::string& filePath)
 {
     std::string data;
@@ -10,6 +15,12 @@ bool XmlSerializer::SetSource(const std::string& filePath)
     return true;
 }
 
+/// <summary>
+/// Returns the string attribute with the given name.
+/// </summary>
+/// <param name="attributeName">Name of the attribute.</param>
+/// <param name="valueOut">Value of the attrribute.</param>
+/// <returns>True if successfull, false if failed</returns>
 bool XmlSerializer::GetStringAttribute(const std::string& attributeName, std::string& valueOut)
 {
     tinyxml2::XMLElement* root = m_Document.RootElement();
@@ -22,6 +33,12 @@ bool XmlSerializer::GetStringAttribute(const std::string& attributeName, std::st
     return true;
 }
 
+/// <summary>
+/// Returns the int attribute with the given name.
+/// </summary>
+/// <param name="attributeName">Name of the attribute.</param>
+/// <param name="valueOut">Value of the attrribute.</param>
+/// <returns>True if successfull, false if failed</returns>
 bool XmlSerializer::GetIntAttribute(const std::string& attributeName, int& valueOut)
 {
     int result; 
@@ -36,6 +53,12 @@ bool XmlSerializer::GetIntAttribute(const std::string& attributeName, int& value
     return true;
 }
 
+/// <summary>
+/// Returns the vector<string> attribute with the given name.
+/// </summary>
+/// <param name="attributeName">Name of the attribute.</param>
+/// <param name="valueOut">Value of the attrribute.</param>
+/// <returns>True if successfull, false if failed</returns>
 bool XmlSerializer::GetStringVectorAttribute(const std::string& attributeName, std::vector<std::string>& valueOut)
 {
     tinyxml2::XMLElement* root = m_Document.RootElement();
@@ -56,6 +79,12 @@ bool XmlSerializer::GetStringVectorAttribute(const std::string& attributeName, s
     return true;
 }
 
+/// <summary>
+/// Returns the map<string, string> attribute with the given name.
+/// </summary>
+/// <param name="attributeName">Name of the attribute.</param>
+/// <param name="valueOut">Value of the attrribute.</param>
+/// <returns>True if successfull, false if failed</returns>
 bool XmlSerializer::GetStringStringMapAttribute(const std::string& attributeName, std::map<std::string, std::string>& valueOut)
 {
     tinyxml2::XMLElement* root = m_Document.RootElement();
@@ -84,6 +113,11 @@ bool XmlSerializer::GetStringStringMapAttribute(const std::string& attributeName
     return true;
 }
 
+/// <summary>
+/// Returns the preferences data.
+/// </summary>
+/// <param name="valueOut">Value of the attrribute.</param>
+/// <returns>True if successfull, false if failed</returns>
 bool XmlSerializer::GetPreferences(std::vector<Preferences::Preference>& valueOut)
 {
     tinyxml2::XMLElement* root = m_Document.RootElement();
@@ -118,6 +152,11 @@ bool XmlSerializer::GetPreferences(std::vector<Preferences::Preference>& valueOu
     return true;
 }
 
+/// <summary>
+/// Sets the preferences data.
+/// </summary>
+/// <param name="value">List of preferences, containing data.</param>
+/// <returns>True if successfull, false if failed</returns>
 bool XmlSerializer::SetPreferences(const std::string& filePath, std::vector<Preferences::Preference>& value)
 {
     tinyxml2::XMLElement* root = m_Document.RootElement();
